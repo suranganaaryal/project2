@@ -12,3 +12,6 @@ la $a0, input
 li $a1, 11
 syscall
 
+enterInput:
+move $t3, $a0
+lb $s2, ($t3)
