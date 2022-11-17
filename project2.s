@@ -109,4 +109,13 @@ jr $ra
 ending:
 li $v0, 1				
 add $a0,$zero,$t5
-syscall																			
+syscall		
+
+li $v0,11
+add $a0, $zero, ','
+syscall
+
+li $v0,1
+add $a0, $zero, $s6 
+syscall
+j exit																	
