@@ -28,4 +28,13 @@ beq $t0, 9, storing
 beq $t8, 1, error					
 li $t8, 1
 
-la $s1, string														
+la $s1, string	
+
+lb $t0, -1($t1)
+sb $t0, 0($s1)						
+
+lb $t0, 0($t1)
+sb $t0, 1($s1)						
+
+lb $t0, 1($t1)
+sb $t0, 2($s1)																			
