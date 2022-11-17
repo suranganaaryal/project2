@@ -37,4 +37,10 @@ lb $t0, 0($t1)
 sb $t0, 1($s1)						
 
 lb $t0, 1($t1)
-sb $t0, 2($s1)																			
+sb $t0, 2($s1)
+
+lb $t0, 2($t1)
+sb $t0, 3($s1)						
+
+addi $t1, $t1, 3					
+j storing																			
