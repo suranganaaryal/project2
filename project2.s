@@ -10,3 +10,9 @@ la $a0, input
 li $a1, 1001						
 syscall
 
+la $t1, input						
+
+li $s6, 0						
+li $t4, 0						
+li $t8, 0
+li $t3, 1						
