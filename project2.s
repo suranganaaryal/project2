@@ -15,4 +15,10 @@ la $t1, input
 li $s6, 0						
 li $t4, 0						
 li $t8, 0
-li $t3, 1						
+li $t3, 1	
+
+storing:
+lb $t0, ($t1)
+addi $t1, $t1, 1
+beq $t0, 10, ender					
+beq $t0, 0, ender									
