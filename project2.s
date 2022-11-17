@@ -83,4 +83,9 @@ ble $t0, 84, ucase
 num:
 addi $a0, $t0, -48
 move $a2, $t3
+j conversion
+
+ucase:
+addi $a0, $t0, -55
+move $a2, $t3
 j conversion																			
