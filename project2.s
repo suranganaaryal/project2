@@ -53,4 +53,11 @@ handling:
 beq $t4, 4, ending
 addi $t4, $t4, 1
 addi $s1, $s1, -1
-lb $t0, ($s1)																			
+lb $t0, ($s1)	
+
+beq $t0, 10, handling 			
+beq $t0, 32, tabandspace
+beq $t0, 9, tabandspace			
+beq $t0, 0, handling
+
+li $t6, 1																			
