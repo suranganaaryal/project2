@@ -122,4 +122,9 @@ j exit
 
 tabandspace:				
 beq $t6, 1, error		
-j handling																	
+j handling	
+
+error:
+li $v0, 4
+la $a0, prompt
+syscall																
