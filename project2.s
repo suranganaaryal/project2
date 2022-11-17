@@ -118,4 +118,8 @@ syscall
 li $v0,1
 add $a0, $zero, $s6 
 syscall
-j exit																	
+j exit
+
+tabandspace:				
+beq $t6, 1, error		
+j handling																	
