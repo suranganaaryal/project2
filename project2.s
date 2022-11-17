@@ -74,4 +74,13 @@ ble $t0, 57, num
 
 lowercase:
 bgt $t0, 116, error
-ble $t0, 116, lcase																			
+ble $t0, 116, lcase
+
+uppercase:
+bgt $t0, 84, error
+ble $t0, 84, ucase
+
+num:
+addi $a0, $t0, -48
+move $a2, $t3
+j conversion																			
