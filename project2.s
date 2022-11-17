@@ -60,4 +60,10 @@ beq $t0, 32, tabandspace
 beq $t0, 9, tabandspace			
 beq $t0, 0, handling
 
-li $t6, 1																			
+li $t6, 1
+
+checker:		
+addi $t5,$t5,1
+bge $t0, 97, lowercase
+bge $t0, 65, uppercase
+bge $t0, 48, number																			
