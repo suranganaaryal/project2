@@ -93,4 +93,11 @@ j conversion
 lcase:
 addi $a0, $t0, -87
 move $a2, $t3
-j conversion																			
+j conversion
+
+conversion:
+jal subprogram
+add $s6, $s6, $v0
+mul $t3, $t3, 30
+j handling
+																			
