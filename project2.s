@@ -43,4 +43,8 @@ lb $t0, 2($t1)
 sb $t0, 3($s1)						
 
 addi $t1, $t1, 3					
-j storing																			
+j storing	
+
+ender:	
+beq $t8, 0, error
+la $s1, string+4																			
